@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Membership</title>
+<title>Membership</title>
 </head>
 <body>
 <h1>Membership Information</h1>
 <p>Welcome to our membership program!</p>
-<br>Dear customers, welcome to the Badminton Club membership program.We are so exicted to join us for Badminton Club</br>
+<br>Dear customers, welcome to the Badminton Club membership program.We are so exicted of you  to join us for Badminton Club</br>
 <br>Please register your membership by filling out the form below.</br>
 <br>As a member, you will enjoy exclusive benefits, including access to our facilities, special events, and discounts on equipment and services.</br>
 
+<br>To become a member,please fill out the membership form and submit it to the club of ficial.Our team will review your applications and get back to you with the next steps</br>
+  
 
+<html>
+<body>
+<title>Form</title>
+<head>
 
+<body>
 
+<form action="/submit_membership" method="post"></form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"> <required><br></required>
 
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"> <required><br></required>
 
+  <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name ="phone"> <required><br></required>
 
+    <label for="membership_type">Membership Type:</label>
+    <select id="membership_type" name="membership_type">
+      <option value="individual">Individual</option>
+      <option value="family">Family</option>
+      <option value="student">Student</option>
+    </select><br><br>
 
+    <input type="submit" value="Submit">
 
-
-
-
-
-
-
-
+  </form>
 </body>
 </html>
 
