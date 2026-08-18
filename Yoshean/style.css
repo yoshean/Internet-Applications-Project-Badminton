@@ -1,53 +1,53 @@
-.menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background: #333;
-  display: flex; /* horizontal layout */
+#a{
+    border: 1px solid;
 }
 
-.menu li a {
-  display: block;
-  padding: 12px 20px;
-  color: white;
-  text-decoration: none;
+ul{
+    display: flex;
+    list-style: none;
+    background-color:rgb(14, 123, 195);
+    margin-top: 0;
 }
 
-.menu li a:hover {
-  background: #444; /* hover effect */
+li{
+    padding: 20px;
 }
 
-
-.dropdown {
-  position: relative; /* parent is anchor point */
-}
-
-.dropdown-content {
-  display: none; /* hidden by default */
-  position: absolute;
-  top: 100%; /* appears below parent */
-  left: 0;
-  background: #444;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  min-width: 160px;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block; /* show when hovering */
+#remove{
+    text-decoration: none;
+    color: black;
 }
 
 
+li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
 
-#logo{
-  float: left;
-  padding:0px;
-  margin-bottom: 120px;
+li:hover{
+    text-align: center;
+    background-color: rgb(14, 78, 121);
+    color: white
+}
+
+td a h1:hover{
+    color:white;
+}
+
+li a:hover{
+    color: white;
+}
+
+td a:hover{
+    background-color: rgb(14, 78, 121);
+    color: white;
 }
 
 footer{
-  background-color:rgb(31, 33, 36);
-  margin: 0px;
-  margin-bottom: 0px;
+    background-color:rgb(14, 123, 195);
+    padding-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
