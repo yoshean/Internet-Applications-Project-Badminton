@@ -1,55 +1,80 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html>
-<head>
-<title>Membership Information</title>
-</head>
-<body>
-<h1>Membership Information</h1>
-<p>Welcome to our membership program!</p>
-<br>Dear customers, welcome to the Badminton Club membership program.We are so exicted of you  to join us for Badminton Club</br>
-<br>Please register your membership by filling out the form below.</br>
-<br>As a member, you will enjoy exclusive benefits, including access to our facilities, special events, and discounts on equipment and services.</br>
+  <head>
+        <title>APU Badminton Membership</title>
+  </head>
+  <body>
+  <style>
+    body{
+      background-color:rgb(254, 254, 254);
+    }
+    h1{
+      color: rgb(13, 13, 14);
+    }
+    h3{
+       color: rgb(4, 4, 4);
+    }
+  </style>
+      <h1>Welcome to our APU Badminton Membership</h1>
+      <hr>
+      <h3>Dear APU Students either you are local or  international students, please make sure you are ready to register your Plaese take care of yourself and we will see you there</h3>
+     
+      <br>
+     <h4>Our Membership Form</h4>
+      <form action="index.php" method="POST" encryte="multipart/form data">
 
-<br>To become a member,please fill out the membership form and submit it to the club of ficial.Our team will review your applications and get back to you with the next steps</br>
-  
+        <label for="username">username:</label>
+        <input type="text" id="username" placeholder="Benjamin Tennyson" minlength="20" maxlength="30"><br>
 
-<html>
-<body>
-<title>Form</title>
-<head>
+        <label for="password">username:</label>
+        <input type="pasword">password:<br>
 
-<body style="background-colour:rgb(6, 14, 17):"
+        <label for="email">email:></label>
+        <input type="email" id="bday"placeholder="Bentennyson@gmail.com"><br>
 
-<br><form action="/submit_membership" method="post"></form></br>
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name"> <required><br></required>
-
- <label for="userID">UserID:</label>
- <input type="text" id="user_id" name="user_id"> <required><br></required>
-
-
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email"> <required><br></required>
-
-  <label for="phone">Phone:</label>
-    <input type="tel" id="phone" name ="phone"> <required><br></required>
-
-    <label for="membership_type">Membership Type:</label>
-    <select id="membership_type" name="membership_type">
-      <option value="individual">Individual</option>
-      <option value="group">Group</option>
-      <option value="student">Student</option>
-      <option value="Lecturer">Lecturer</option>
-    </select><br><br>
-
-    <input type="submit" value="Submit">
-
-<form action="process.php" method="POST">
-   
-</form>
+        <label for="quantity">quantity:></label>
+        <input type="quantity" min="0" max="110" value="2"><br>
 
 
-  </form>
-</body>
+        <label for="title">title:</label>
+        <br>
+
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." value="Mr." name="title">
+
+        <label for="Mrs.">Mrs.</label>
+        <input type="radio" id="Mrs." value="Mrs." name="title">
+
+        <label for="Dato">Dato</label>
+        <input type="radio" id="Dato" value="Dato" name="title">
+
+        <label for="Datin">Datin</label>
+        <input type="radio" id="Datin" vale="Datin" name="title">
+
+        <label type="Dr.">Dr.</label>
+        <input type="radio" id="Dr." value="Dr." name="title">
+
+      </form>
+
+
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
