@@ -1,12 +1,11 @@
 body{
-    background-color:black
+    background-color:white
 }
 h1{
-    color:rgb(20, 178, 206)
-}
+    color:black }
 h3{
-    color: rgb(20, 214, 214);
+    color: black
 }
 h4{
-    color:aqua
+    color: rgb(4, 4, 243)
 }
