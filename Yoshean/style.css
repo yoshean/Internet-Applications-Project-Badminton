@@ -1,53 +1,37 @@
-#a{
-    border: 1px solid;
+header{
+    text-decoration:none;
 }
 
-ul{
+body, header, footer{
+    background-color: black;
+    color:blanchedalmond
+}
+
+
+nav{
     display: flex;
-    list-style: none;
-    background-color:rgb(14, 123, 195);
-    margin-top: 0;
-}
-
-li{
-    padding: 20px;
-}
-
-#remove{
-    text-decoration: none;
-    color: black;
+    background-color: rgb(13, 78, 122);
+    margin-left: 0px;  
 }
 
 
-li a{
-    display: block;
-    text-decoration: none;
-    color: black;
+nav ul{
+    display: flex;
+    border:10px;
 }
 
-li:hover{
-    text-align: center;
-    background-color: rgb(14, 78, 121);
-    color: white
+nav ul li{
+    padding-right: 100px;
 }
 
-td a h1:hover{
-    color:white;
+
+tr td a, ul li a{
+    background-color: rgb(13, 78, 122);
+    color:blanchedalmond;
 }
 
-li a:hover{
-    color: white;
+tr td a:hover, ul li a:hover{
+    background-color: rgb(14, 143, 229);
+    color: aquamarine;
+    padding: 15px;
 }
-
-td a:hover{
-    background-color: rgb(14, 78, 121);
-    color: white;
-}
-
-footer{
-    background-color:rgb(14, 123, 195);
-    padding-bottom: 100px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
