@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Feedback — APU Badminton Club</title>
+</head>
+<body>
+
+<nav>
+  <div class="brand">APU<span>BADMINTON</span>CLUB</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="rules.html">Rules</a></li>
+    <li><a href="calendar.html">Calendar</a></li>
+    <li><a href="register.html">Register</a></li>
+    <li class="active"><a href="feedback.html">Feedback</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="page-head">
+  <div class="eyebrow">Member Feedback</div>
+  <h1>Tell Us What You Think</h1>
+  <p>Had a session, tournament, or coaching class recently? Let us know how it went your feedback helps us improve the club for everyone.</p>
+</header>
+
+<div class="wrap">
+  <form action="#" method="post" novalidate>
+
+    <fieldset>
+      <div class="fieldset-head"><span class="num">01</span><span class="legend-text">Your Details</span></div>
+
+      <div class="grid-2">
+        <div class="field">
+          <label for="fullname">Full Name <span class="req">*</span></label>
+          <input type="text" id="fullname" name="fullname" placeholder="Your name" required>
+        </div>
+        <div class="field">
+          <label for="studentid">Student ID <span class="hint">(leave blank if non-member)</span></label>
+          <input type="text" id="studentid" name="studentid" placeholder="e.g. TP0XXXXX">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="email">Email Address <span class="req">*</span></label>
+        <input type="email" id="email" name="email" placeholder="you@apu.edu.my" required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="fieldset-head"><span class="num">02</span><span class="legend-text">Feedback Type</span></div>
+
+      <div class="field">
+        <label>What is your feedback about? <span class="req">*</span></label>
+        <div class="choice-row">
+          <label class="pill"><input type="radio" name="feedback-type" value="training" checked> Training Sessions</label>
+          <label class="pill"><input type="radio" name="feedback-type" value="tournament"> Tournaments/Events</label>
+          <label class="pill"><input type="radio" name="feedback-type" value="facilities"> Facilities/Equipment</label>
+          <label class="pill"><input type="radio" name="feedback-type" value="committee"> Committee/Organisation</label>
+          <label class="pill"><input type="radio" name="feedback-type" value="other"> Other</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Overall Rating <span class="req">*</span></label>
+        <div class="choice-row">
+          <label class="pill"><input type="radio" name="rating" value="5" required> Excellent</label>
+          <label class="pill"><input type="radio" name="rating" value="4"> Good</label>
+          <label class="pill"><input type="radio" name="rating" value="3"> Average</label>
+          <label class="pill"><input type="radio" name="rating" value="2"> Below Average</label>
+          <label class="pill"><input type="radio" name="rating" value="1"> Poor</label>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="fieldset-head"><span class="num">03</span><span class="legend-text">Your Comments</span></div>
+
+      <div class="field">
+        <label for="highlights">What did you like?</label>
+        <textarea id="highlights" name="highlights" placeholder="Optional"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="improvements">What could we improve? <span class="req">*</span></label>
+        <textarea id="improvements" name="improvements" placeholder="Tell us honestly — we read every response" required></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="fieldset-head"><span class="num">04</span><span class="legend-text">Confirmation</span></div>
+      <div class="consent">
+        <input type="checkbox" id="anonymous" name="anonymous">
+        <label for="anonymous">Submit this feedback anonymously (your name/email won't be shared with the committee).</label>
+      </div>
+    </fieldset>
+
+    <div class="actions">
+      <span class="note">Feedback is reviewed by the committee monthly.</span>
+      <div>
+        <button type="reset">Clear Form</button>
+        <button type="submit">Submit Feedback</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<footer class="page-foot">
+  APU Badminton Club &middot; Bukit Jalil Campus &middot; <a href="register.html">Register</a> &middot; <a href="enquiry.html">Enquiries</a>
+</footer>
+
+</body>
+</html>
