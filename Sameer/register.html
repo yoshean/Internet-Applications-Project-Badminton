@@ -1,44 +1,129 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        
-        <title>APU Badminton Club - Register</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="images/jpeg" href="images/logo.jpg">
-    </head>
-    <body>
+<html lang="en">
+<head>
+<title>Register — APU Badminton Club</title>
+</head>
+<body>
 
-        <header class="site-header">
-            <nav class="navbar">
-                <a href="index.html" class="navbar__brand">
-                    <span class="shuttle-mark" aria-hidden="true"></span>
-                    APU Badminton Club
-                </a>
+<nav>
+  <div class="brand">APU<span>BADMINTON</span>CLUB</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="rules.html">Rules</a></li>
+    <li><a href="calendar.html">Calendar</a></li>
+    <li class="active"><a href="register.html">Register</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-                <input type="checkbox" id="nav-toggle" class="navbar__toggle">
-                <label for="nav-toggle" class="navbar__toggle-label">Menu ☰</label>
+<header class="page-head">
+  <div class="eyebrow">Membership Registration</div>
+  <h1>Join the Court</h1>
+  <p>Fill in your details below to register as a member of the APU Badminton Club. Fields marked <span class="req">*</span> are required. We'll confirm your membership by email within 3 working days.</p>
+</header>
 
-                <ul class="navbar__links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="mission.html">Mission</a></li>
-                    <li><a href="committee.html">Committee</a></li>
-                    <li><a href="rules.html">Rules</a></li>
-                    <li><a href="equipment.html">Equipment</a></li>
-                    <li><a href="membership.html">Membership</a></li>
-                    <li><a href="calendar.html">Calendar</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="achievements.html">Achievements</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="register.html" aria-current="page">Register</a></li>
-                </ul>
-            </nav>
-        </header>
+<div class="wrap">
+  <form action="#" method="post" novalidate>
 
-        <section class="page-banner">
-            <div-class=
-        </section>
-    </body>
+    <fieldset>
+      <div class="fieldset-head"><span class="num">01</span><span class="legend-text">Player Details</span></div>
+
+      <div class="grid-2">
+        <div class="field">
+          <label for="fullname">Full Name <span class="req">*</span></label>
+          <input type="text" id="fullname" name="fullname" placeholder="As per NRIC / Passport" required>
+        </div>
+        <div class="field">
+          <label for="studentid">Student ID <span class="hint">(leave blank if non-member)</span></label>
+          <input type="text" id="studentid" name="studentid" placeholder="e.g. TP0XXXXX">
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="field">
+          <label for="email">Email Address <span class="req">*</span></label>
+          <input type="email" id="email" name="email" placeholder="you@apu.edu.my" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone Number <span class="req">*</span></label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9+\-\s]{8,15}" placeholder="+60 12-345 6789" required>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="field">
+          <label for="dob">Date of Birth <span class="req">*</span></label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+        <div class="field">
+          <label for="intake">Intake / Faculty</label>
+          <input type="text" id="intake" name="intake" placeholder="e.g. UC2F2601IT">
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="fieldset-head"><span class="num">02</span><span class="legend-text">Membership Type</span></div>
+
+      <div class="field">
+        <label>Applying as <span class="req">*</span></label>
+        <div class="choice-row">
+          <label class="pill"><input type="radio" name="member-type" value="member" checked> APU Student Member</label>
+          <label class="pill"><input type="radio" name="member-type" value="non-member"> Non-Member Guest</label>
+          <label class="pill"><input type="radio" name="member-type" value="alumni"> Alumni</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Preferred Playing Level</label>
+        <div class="choice-row">
+          <label class="pill"><input type="radio" name="level" value="beginner" checked> Beginner</label>
+          <label class="pill"><input type="radio" name="level" value="intermediate"> Intermediate</label>
+          <label class="pill"><input type="radio" name="level" value="advanced"> Advanced / Competitive</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="sessions">Preferred Session Days</label>
+        <select id="sessions" name="sessions">
+          <option value="">Select a day</option>
+          <option value="mon-wed">Monday & Wednesday</option>
+          <option value="tue-thu">Tuesday & Thursday</option>
+          <option value="weekend">Saturday</option>
+          <option value="any">No preference</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="fieldset-head"><span class="num">03</span><span class="legend-text">Additional Notes</span></div>
+      <div class="field">
+        <label for="notes">Anything we should know? <span class="hint">(injuries, equipment needs, etc.)</span></label>
+        <textarea id="notes" name="notes" placeholder="Optional"></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="fieldset-head"><span class="num">04</span><span class="legend-text">Confirmation</span></div>
+      <div class="consent">
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I confirm that the information provided is accurate and I agree to the club's <a href="rules.html">rules and regulations</a>.</label>
+      </div>
+    </fieldset>
+
+    <div class="actions">
+      <span class="note">Registration closes at the start of each semester.</span>
+      <div>
+        <button type="reset">Clear Form</button>
+        <button type="submit">Submit Registration</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<footer class="page-foot">
+  APU Badminton Club &middot; Bukit Jalil Campus &middot; <a href="enquiry.html">Enquiries</a> &middot; <a href="feedback.html">Feedback</a>
+</footer>
+
+</body>
 </html>
