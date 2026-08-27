@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Enquiry — APU Badminton Club</title>
+</head>
+<body>
+
+<nav>
+  <div class="brand">APU<span>BADMINTON</span>CLUB</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="rules.html">Rules</a></li>
+    <li><a href="calendar.html">Calendar</a></li>
+    <li><a href="register.html">Register</a></li>
+    <li class="active"><a href="enquiry.html">Enquiry</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="page-head">
+  <div class="eyebrow">General Enquiry</div>
+  <h1>Ask Us Anything</h1>
+  <p>Got a question about membership, sessions, tournaments, or anything else? Send it over and a committee member will get back to you.</p>
+</header>
+
+<div class="wrap">
+  <form action="#" method="post" novalidate>
+
+    <fieldset>
+      <div class="fieldset-head"><span class="num">01</span><span class="legend-text">Your Details</span></div>
+
+      <div class="grid-2">
+        <div class="field">
+          <label for="fullname">Full Name <span class="req">*</span></label>
+          <input type="text" id="fullname" name="fullname" placeholder="Your name" required>
+        </div>
+        <div class="field">
+          <label for="studentid">Student ID <span class="hint">(leave blank if non-member)</span></label>
+          <input type="text" id="studentid" name="studentid" placeholder="e.g. TP0XXXXX">
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="field">
+          <label for="email">Email Address <span class="req">*</span></label>
+          <input type="email" id="email" name="email" placeholder="you@apu.edu.my" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9+\-\s]{8,15}" placeholder="+60 12-345 6789">
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="fieldset-head"><span class="num">02</span><span class="legend-text">Enquiry Details</span></div>
+
+      <div class="field">
+        <label>What is your enquiry about? <span class="req">*</span></label>
+        <div class="choice-row">
+          <label class="pill"><input type="radio" name="topic" value="membership" checked> Membership</label>
+          <label class="pill"><input type="radio" name="topic" value="sessions"> Training Sessions</label>
+          <label class="pill"><input type="radio" name="topic" value="tournament"> Tournaments/Events</label>
+          <label class="pill"><input type="radio" name="topic" value="sponsorship"> Sponsorship</label>
+          <label class="pill"><input type="radio" name="topic" value="other"> Other</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="subject">Subject <span class="req">*</span></label>
+        <input type="text" id="subject" name="subject" placeholder="Brief summary of your enquiry" required>
+      </div>
+
+      <div class="field">
+        <label for="message">Your Message <span class="req">*</span></label>
+        <textarea id="message" name="message" placeholder="Tell us more about your enquiry" required></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="fieldset-head"><span class="num">03</span><span class="legend-text">Preferred Response</span></div>
+
+      <div class="field">
+        <label>How should we get back to you?</label>
+        <div class="choice-row">
+          <label class="pill"><input type="radio" name="contact-method" value="email" checked> Email</label>
+          <label class="pill"><input type="radio" name="contact-method" value="phone"> Phone Call</label>
+          <label class="pill"><input type="radio" name="contact-method" value="whatsapp"> WhatsApp</label>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="fieldset-head"><span class="num">04</span><span class="legend-text">Confirmation</span></div>
+      <div class="consent">
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I understand that responses may take up to 3 working days.</label>
+      </div>
+    </fieldset>
+
+    <div class="actions">
+      <span class="note">We usually reply within 1–3 working days.</span>
+      <div>
+        <button type="reset">Clear Form</button>
+        <button type="submit">Send Enquiry</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<footer class="page-foot">
+  APU Badminton Club &middot; Bukit Jalil Campus &middot; <a href="register.html">Register</a> &middot; <a href="feedback.html">Feedback</a>
+</footer>
+
+</body>
+</html>
